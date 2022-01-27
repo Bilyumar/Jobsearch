@@ -1,0 +1,106 @@
+<html>
+<head>
+ <style>
+      p{text-align:center;font-size:60px;}
+      button{text=align:center; }
+      .block{width:20%;height:40px;font-size:20px;}
+     input[type=text]{width:300px; height:40px;}
+     body{background-image:url(be1.png);  background-size:cover;}
+     #form{text-align:center;}
+     body.html{min-height:100%;}
+     
+     .middle{font-size: 70px; color:4169E1;text-align: center;}
+   
+</style>
+</head>
+
+  <body>
+<div class="container";>
+<br><br><br><br><br><br><br><br><br>
+   
+
+    
+<div class="middle">
+<form action="/action_page.php" method="post"  id="form" >
+   
+     <div id=="message"></div>
+
+<P>  CREATE AN ACCOUNT </P>
+         Name:<br>
+         <input type="text" id= "name" required>
+          <br><br>
+
+         Email:<br>
+         <input type="email" id="email"
+         placeholder="Enter email" name="email" required>
+          <br><br>
+
+          Address:<br>
+           <input type="text" id="address" required>
+            <br><br>
+
+         Contact:<br>
+           <input type="text" id="contact" required>
+            <br><br>
+
+
+           Password:<br>
+           <input type="text" id="password" required>
+            <br><br>
+    
+        
+         
+       <button type="submit" class="block"> <a href="index.html";>GET STARTED</a></button>
+          
+</form>
+</div>
+
+      <p style="color:red"; font-size:60px;> By creating an account you agree to our Terms & Privacy</p><br>
+        
+
+
+  <p  style= "color:red";font-size:60px;>Already have an account?<a href="sign.html">LOG IN</a>.</p><br><br><br><br>
+
+
+   </div>
+
+  
+
+</body>
+
+    <script>
+
+
+         var form = document.getElementById('form')
+        var error = []
+
+    form.addEventListener('submit',function(e){
+       e.preventDefault() //to prevent auto submission of the form
+
+           var Name = document.getElementById('name') 
+            var Email = document.getElementById('email') 
+             var Password = document.getElementById('password') 
+              var Address= document.getElementById('address')  
+
+
+       if(name.value == ""){   
+             error.push("Please enter name")
+}
+       if( email.value == ""){   
+             error.push("Please enter email")
+}
+       if( password.value == ""){   
+             error.push("Please enter password")
+}
+       if(address.value == ""){   
+             error.push("Please enter address")
+}
+     alert("form is submitted")  
+     var message = document.getElementById('message')
+
+    message.innerText = error
+
+}) 
+
+
+   </html>

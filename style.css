@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+.container {
+    width: 80%;
+}
+.menu_bar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #293742;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: 30px;
+    padding: 20px 50px;
+    align-content: center;
+    align-items: center;
+}
+.logo {
+    font-size: 50px;
+    color: #f33e69;
+    font-weight: bold;
+}
+.menu_links {
+    display: flex;
+    justify-content: space-between;
+}
+.menu_links a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 25px;
+}
+.home_page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.hero_text h2 {
+    font-size: 120px;
+    color: #293742;
+}
+.hero_text h5 {
+    margin-top: 50px;
+    font-size: 50px;
+    color: #293742;
+}
+.hero_text {
+    width: 100%;
+}
+.home_right {
+    width: 50%;
+}
+.home_left {
+    width: 50%;
+}
+.hero_img {
+    width: 110%;
+}
+
+.home_left,
+.home_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero_form {
+    background-color: #293742;
+    width: 340px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.hero_form form {
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    padding: 40px;
+    color: #f2f2f2;
+}
+label {
+    font-size: 22px;
+    font-weight: 500;
+}
+.hero_form form input[type="text"],
+.hero_form form input[type="text"] {
+    background-color: #334654;
+    font-size: 30px;
+    padding-left: 15px;
+    color: #293742;
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+}
+.btn_submit {
+    margin-top: 10px;
+    width: 250px;
+    background-color: #f33e69;
+    color: #f2f2f2;
+    border: none;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.offers_page {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 50px;
+}
+.offers_page h3 {
+    color: #293742;
+    font-size: 60px;
+}
+.job_offers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 30px;
+}
+.job_item {
+    width: 400px;
+    background-color: #f2f2f2;
+    color: #293742;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+.job_title {
+    font-size: 35px;
+}
+.job_pay {
+    font-size: 20px;
+    font-weight: 700;
+}
+.job_location {
+    font-size: 20px;
+    font-weight: 500;
+}
+.apply_btn {
+    width: 100%;
+    height: 40px;
+    background-color: #f33e69;
+    color: #f2f2f2;
+    border: none;
+    margin-top: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.apply_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.application_form h3 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    color: #293742;
+}
+.application_form form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.job_tag {
+    background-color: #f33e69;
+    color: #f2f2f2;
+    width: inherit;
+    padding: 10px;
+}
+.application_form input[type="text"],
+.application_form input[type="email"],
+.application_form input[type="file"] {
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 0;
+    font-size: 25px;
+    padding-left: 30px;
+    color: #f2f2f298;
+
+    border: none;
+    background-color: #334654;
+}
+.application_form input[type="file"] {
+    padding: 10px;
+    height: inherit;
+}
+.application_form input[type="submit"] {
+    width: 500px;
+    height: 50px;
+    background-color: #f33e69;
+    border: 0;
+    border-radius: 5px;
+    margin: auto;
+    color: #f2f2f2;
+    font-size: 30px;
+}
+input::placeholder {
+    color: #f2f2f298;
+}
+.application_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
